@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="800deddf-896d-4ef4-aa9b-2a48f38fa2a3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.0/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/7.3.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/artifacts/aeron_performance_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/aeron-sample/aeron-sample.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/aeron-sample/src/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/build/classes/java/main/com/aeroncookbook/ipc/BasicPublisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/build/classes/java/main/com/aeroncookbook/ipc/BasicSubscriber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/out/artifacts/aeron_performance_jar/aeron-performance.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/out/production/aeron-sample/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/src/main/java/com/aeroncookbook/ipc/BasicPublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aeron-performance/src/main/java/com/aeroncookbook/ipc/BasicSubscriber.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="aeron-performance" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="aeron-performance" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="aeron-performance" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="24AMFBwEXaTx9HRUjDYYrbK7LDp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager" selected="Application.BasicPublisher">
+    <configuration name="BasicPublisher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aeroncookbook.ipc.BasicPublisher" />
+      <module name="aeron-performance.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aeroncookbook.ipc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicSubscriber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.aeroncookbook.ipc.BasicSubscriber" />
+      <module name="aeron-performance.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.aeroncookbook.ipc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aeron-jmeter-poc [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BasicPublisher" />
+        <item itemvalue="Gradle.aeron-jmeter-poc [build]" />
+        <item itemvalue="Application.BasicSubscriber" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="800deddf-896d-4ef4-aa9b-2a48f38fa2a3" name="Changes" comment="" />
+      <created>1643068831159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643068831159</updated>
+    </task>
+    <servers />
+  </component>
+</project>
