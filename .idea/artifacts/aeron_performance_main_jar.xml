@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="aeron-performance.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/aeron_performance_main_jar</output-path>
+    <root id="archive" name="aeron-performance.main.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="aeron-performance.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.aeron/aeron-all/1.37.0/e80d72f6b452361be7175310b323018d4311a3f4/aeron-all-1.37.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
