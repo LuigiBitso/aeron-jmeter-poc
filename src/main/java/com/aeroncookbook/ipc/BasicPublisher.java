@@ -20,6 +20,7 @@ import io.aeron.Publication;
 import io.aeron.driver.MediaDriver;
 import org.agrona.BufferUtil;
 import org.agrona.concurrent.UnsafeBuffer;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -29,86 +30,69 @@ import java.util.concurrent.TimeUnit;
  * then lingers to allow any consumers that may have experienced loss a chance to NAK for
  * and recover any missing data.
  * The default values for number of messages, channel, and stream ID are
- * defined in {@link SampleConfiguration} and can be overridden by
+ * defined in {@link io.aeron.samples.SampleConfiguration} and can be overridden by
  * setting their corresponding properties via the command-line; e.g.:
  * -Daeron.sample.channel=aeron:udp?endpoint=localhost:5555 -Daeron.sample.streamId=20
  */
-public class BasicPublisher
-{
-    private static final int STREAM_ID = 8;
-    private static final String CHANNEL = "aeron:udp?endpoint=localhost:8081";
+public class BasicPublisher {
+    private final int streamId;//8;
+    private final String channel; //"aeron:udp?endpoint=localhost:8081";
+    private final String content;
     private static final long LINGER_TIMEOUT_MS = 5000;
-    private static final boolean EMBEDDED_MEDIA_DRIVER = true;
 
-    public static void main(final String[] args) throws InterruptedException
-    {
-        // If configured to do so, create an embedded media driver within this application rather
-        // than relying on an external one.
-        isEmbeddedMediaDriver();
-        sendingMessages(10);
+    final int n_messages;
+
+    public BasicPublisher(String channel, int streamId, String content, int n_messages) {
+        this.n_messages = n_messages;
+        this.channel = channel;
+        this.streamId = streamId;
+        this.content = content;
     }
 
-    public static MediaDriver isEmbeddedMediaDriver(){
-        final MediaDriver driver = EMBEDDED_MEDIA_DRIVER ? MediaDriver.launchEmbedded() : null;
-        return driver;
-    }
+    public void send() {
 
-    public static void sendingMessages(int n_messages) {
         final Aeron.Context ctx = new Aeron.Context();
-        if (EMBEDDED_MEDIA_DRIVER)
-        {
-            ctx.aeronDirectoryName(isEmbeddedMediaDriver().aeronDirectoryName()); ///dev/shm
-        }
+        final MediaDriver driver = MediaDriver.launchEmbedded();
+
+        ctx.aeronDirectoryName(driver.aeronDirectoryName()); ///dev/shm
 
         // Connect a new Aeron instance to the media driver and create a publication on
         // the given channel and stream ID.
         // The Aeron and Publication classes implement "AutoCloseable" and will automatically
         // clean up resources when this try block is finished
-        try (Aeron aeron = Aeron.connect(ctx);
-             Publication publication = aeron.addPublication(CHANNEL, STREAM_ID))
-        {
+
+        try (
+                Aeron aeron = Aeron.connect(ctx);
+                Publication publication = aeron.addPublication(channel, streamId)
+        ) {
+
             final UnsafeBuffer buffer = new UnsafeBuffer(BufferUtil.allocateDirectAligned(256, 64));
 
-            for (long i = 0; i < n_messages; i++)
-            {
+            for (long i = 0; i < n_messages; i++) {
                 System.out.print("Offering " + i + "/" + n_messages + " - ");
 
-                final int length = buffer.putStringWithoutLengthAscii(0, "Hello World! " + i);
+                final int length = buffer.putStringWithoutLengthAscii(0, content);
                 final long result = publication.offer(buffer, 0, length);
 
-                if (result > 0)
-                {
+                if (result > 0) {
                     System.out.println("Sending ... :) !");
-                }
-                else if (result == Publication.BACK_PRESSURED)
-                {
+                } else if (result == Publication.BACK_PRESSURED) {
                     System.out.println("Offer failed due to back pressure");
-                }
-                else if (result == Publication.NOT_CONNECTED)
-                {
+                } else if (result == Publication.NOT_CONNECTED) {
                     System.out.println("Offer failed because publisher is not connected to a subscriber");
-                }
-                else if (result == Publication.ADMIN_ACTION)
-                {
+                } else if (result == Publication.ADMIN_ACTION) {
                     System.out.println("Offer failed because of an administration action in the system");
-                }
-                else if (result == Publication.CLOSED)
-                {
+                } else if (result == Publication.CLOSED) {
                     System.out.println("Offer failed because publication is closed");
                     break;
-                }
-                else if (result == Publication.MAX_POSITION_EXCEEDED)
-                {
+                } else if (result == Publication.MAX_POSITION_EXCEEDED) {
                     System.out.println("Offer failed due to publication reaching its max position");
                     break;
-                }
-                else
-                {
+                } else {
                     System.out.println("Offer failed due to unknown reason: " + result);
                 }
 
-                if (!publication.isConnected())
-                {
+                if (!publication.isConnected()) {
                     System.out.println("No active subscribers detected");
                 }
 
@@ -117,13 +101,15 @@ public class BasicPublisher
 
             System.out.println("Done sending...");
 
-            if (LINGER_TIMEOUT_MS > 0)
-            {
+            if (LINGER_TIMEOUT_MS > 0) {
                 System.out.println("Lingering for " + LINGER_TIMEOUT_MS + " milliseconds...");
                 Thread.sleep(LINGER_TIMEOUT_MS);
             }
+
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            ctx.close();
         }
     }
 }
