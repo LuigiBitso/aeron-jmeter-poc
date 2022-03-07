@@ -95,9 +95,6 @@ public class BasicPublisher {
             if (!publication.isConnected()) {
                 System.out.println("No active subscribers detected");
             }
-
-            System.out.println("Done sending.");
-
         }
 
         CloseHelper.close(driver);
